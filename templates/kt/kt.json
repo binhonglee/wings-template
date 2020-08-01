@@ -1,0 +1,70 @@
+{
+  "comment": "//",
+  "filename": "pascal",
+  "filetype": "kt",
+  "implementFormat": ": {#IMPLEMENT} ",
+  "importPath": {
+    "pathType": "never"
+  },
+  "indentation": {
+    "spacing": "  ",
+    "preIndent": true
+  },
+  "templates": {
+    "struct": "https://raw.githubusercontent.com/binhonglee/wings-template/main/templates/kt/struct.kt",
+    "enum": "https://raw.githubusercontent.com/binhonglee/wings-template/main/templates/kt/enum.kt",
+    "interface": "https://raw.githubusercontent.com/binhonglee/wings-template/main/templates/kt/interface.kt"
+  },
+  "interfaceConfig": {
+    "interfaceSupported": true,
+    "paramFormat": "{#PARAM_NAME}: {#PARAM_TYPE}",
+    "paramJoiner": ", "
+  },
+  "types": [
+    {
+      "wingsType": "int",
+      "targetType": "Int",
+      "targetInit": "0"
+    }, {
+      "wingsType": "void",
+      "targetType": "Unit",
+      "targetInit": ""
+    }, {
+      "wingsType": "flt",
+      "targetType": "Float",
+      "targetInit": "0"
+    }, {
+      "wingsType": "dbl",
+      "targetType": "Double",
+      "targetInit": "0"
+    }, {
+      "wingsType": "str",
+      "targetType": "String",
+      "targetInit": "\"\""
+    }, {
+      "wingsType": "bool",
+      "targetType": "Boolean",
+      "targetInit": "false"
+    }, {
+      "wingsType": "date",
+      "targetType": "Date",
+      "targetInit": "Date()"
+    }, {
+      "wingsType": "[]{TYPE}",
+      "targetType": "ArrayList<{TYPE1}>",
+      "targetInit": "arrayListOf<{TYPE1}>()"
+    }, {
+      "wingsType": "Map<{TYPE1},{TYPE2}>",
+      "targetType": "HashMap<{TYPE1}, {TYPE2}>",
+      "targetInit": "hashMapOf<{TYPE1}, {TYPE2}>()"
+    }, {
+      "wingsType": "!imported",
+      "targetType": "{#TYPE_PASCAL}",
+      "targetInit": "{#TYPE_PASCAL}()"
+    }, {
+      "wingsType": "!unimported",
+      "targetType": "{#TYPE_PASCAL}",
+      "targetInit": "{#TYPE_PASCAL}()"
+    }
+  ]
+}

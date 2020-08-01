@@ -1,0 +1,54 @@
+{
+  "comment": "#",
+  "filename": "lower",
+  "filetype": "nim",
+  "implementFormat": " of {#IMPLEMENT} ",
+  "importPath": {
+    "format": "{#IMPORT}",
+    "pathType": "relative",
+    "prefix": "",
+    "level": 0
+  },
+  "indentation": {
+    "spacing": "  ",
+    "preIndent": false
+  },
+  "templates": {
+    "struct": "https://raw.githubusercontent.com/binhonglee/wings-template/main/templates/nim/struct.nim",
+    "enum": "https://raw.githubusercontent.com/binhonglee/wings-template/main/templates/nim/enum.nim"
+  },
+  "types": [
+    {
+      "wingsType": "int",
+      "targetType": "int"
+    }, {
+      "wingsType": "flt",
+      "targetType": "float"
+    }, {
+      "wingsType": "dbl",
+      "targetType": "float64"
+    }, {
+      "wingsType": "str",
+      "targetType": "string"
+    }, {
+      "wingsType": "bool",
+      "targetType": "bool"
+    }, {
+      "wingsType": "date",
+      "targetType": "DateTime"
+    }, {
+      "wingsType": "[]{TYPE}",
+      "targetType": "seq[{TYPE1}]"
+    }, {
+      "wingsType": "Map<{TYPE1},{TYPE2}>",
+      "targetType": "Table[{TYPE1}, {TYPE2}]",
+      "requiredImport": "tables"
+    }, {
+      "wingsType": "!imported",
+      "targetType": "{#TYPE_PASCAL}"
+    }, {
+      "wingsType": "!unimported",
+      "targetType": "{#TYPE_PASCAL}"
+    }
+  ]
+}

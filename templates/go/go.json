@@ -1,0 +1,62 @@
+{
+  "comment": "//",
+  "filename": "lower",
+  "filetype": "go",
+  "importPath": {
+    "format": "{#1}:{#IMPORT}",
+    "pathType": "absolute",
+    "prefix": "",
+    "level": 1
+  },
+  "indentation": {
+    "spacing": "\t",
+    "preIndent": false
+  },
+  "templates": {
+    "struct": "https://raw.githubusercontent.com/binhonglee/wings-template/main/templates/go/struct.go",
+    "enum": "https://raw.githubusercontent.com/binhonglee/wings-template/main/templates/go/enum.go",
+    "interface": "https://raw.githubusercontent.com/binhonglee/wings-template/main/templates/go/interface.go"
+  },
+  "interfaceConfig": {
+    "interfaceSupported": true,
+    "paramFormat": "{#PARAM_NAME} {#PARAM_TYPE}",
+    "paramJoiner": ", "
+  },
+  "types": [
+    {
+      "wingsType": "void",
+      "targetType": ""
+    }, {
+      "wingsType": "int",
+      "targetType": "int"
+    }, {
+      "wingsType": "flt",
+      "targetType": "float"
+    }, {
+      "wingsType": "dbl",
+      "targetType": "double"
+    }, {
+      "wingsType": "str",
+      "targetType": "string"
+    }, {
+      "wingsType": "bool",
+      "targetType": "bool"
+    }, {
+      "wingsType": "date",
+      "targetType": "time.Time",
+      "requiredImport": "time"
+    }, {
+      "wingsType": "[]{TYPE}",
+      "targetType": "[]{TYPE1}"
+    }, {
+      "wingsType": "Map<{TYPE1},{TYPE2}>",
+      "targetType": "map[{TYPE1}]{TYPE2}"
+    }, {
+      "wingsType": "!imported",
+      "targetType": "{#1}.{#TYPE_PASCAL}"
+    }, {
+      "wingsType": "!unimported",
+      "targetType": "{#TYPE_PASCAL}"
+    }
+  ]
+}

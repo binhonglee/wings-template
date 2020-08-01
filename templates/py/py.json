@@ -1,0 +1,65 @@
+{
+  "comment": "#",
+  "filename": "lower",
+  "filetype": "py",
+  "implementFormat": "{#IMPLEMENT}",
+  "importPath": {
+    "format": "{#IMPORT}",
+    "pathType": "absolute",
+    "prefix": "",
+    "separator": ".",
+    "level": 0
+  },
+  "indentation": {
+    "spacing": "  ",
+    "preIndent": true
+  },
+  "templates": {
+    "struct": "https://raw.githubusercontent.com/binhonglee/wings-template/main/templates/py/struct.py",
+    "enum": "https://raw.githubusercontent.com/binhonglee/wings-template/main/templates/py/enum.py"
+  },
+  "types": [
+    {
+      "wingsType": "int",
+      "targetType": "int",
+      "targetInit": "0"
+    }, {
+      "wingsType": "flt",
+      "targetType": "float",
+      "targetInit": "0"
+    }, {
+      "wingsType": "dbl",
+      "targetType": "double",
+      "targetInit": "0"
+    }, {
+      "wingsType": "str",
+      "targetType": "str",
+      "targetInit": "\"\""
+    }, {
+      "wingsType": "bool",
+      "targetType": "bool",
+      "targetInit": "False"
+    }, {
+      "wingsType": "date",
+      "targetType": "datetime",
+      "requiredImport": "datetime:datetime",
+      "targetInit": "datetime.now()"
+    }, {
+      "wingsType": "[]{TYPE}",
+      "targetType": "list",
+      "targetInit": "[]"
+    }, {
+      "wingsType": "Map<{TYPE1},{TYPE2}>",
+      "targetType": "dict",
+      "targetInit": "{}"
+    }, {
+      "wingsType": "!imported",
+      "targetType": "{#TYPE_PASCAL}",
+      "targetInit": "new {#TYPE_PASCAL}()"
+    }, {
+      "wingsType": "!unimported",
+      "targetType": "{#TYPE_PASCAL}",
+      "targetInit": "new {#TYPE_PASCAL}()"
+    }
+  ]
+}
